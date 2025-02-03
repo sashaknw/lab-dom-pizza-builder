@@ -12,7 +12,7 @@ const ingredients = {
 
 // Initial value of the state (the state values can change over time)
 const state = {
-  pepperoni: true,
+  pepperoni: false,
   mushrooms: true,
   greenPeppers: true,
   whiteSauce: false,
@@ -108,6 +108,7 @@ renderEverything();
 // Iteration 1: Example of a click event listener on `<button class="btn btn-pepperoni">`
 document.querySelector('.btn.btn-pepperoni').addEventListener('click', function () {
   state.pepperoni = !state.pepperoni;
+  
   renderEverything();
 });
 
@@ -131,3 +132,15 @@ document.querySelector('.btn.btn-sauce').addEventListener('click', function () {
 document.querySelector('.btn.btn-crust').addEventListener('click', function () { 
   state.glutenFreeCrust =!state.glutenFreeCrust; renderEverything(); }); 
   renderEverything();
+
+
+  
+
+
+  
+
+
+
+
+
+
